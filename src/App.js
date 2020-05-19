@@ -39,9 +39,9 @@ function App() {
       <section className="content">
         <div className="hero-image">
           <img src="yonder_hero.png" alt="Yonder Farms Hero" />
+          <h1 className="floating-statement">Garden Center and Farm Market</h1>
         </div>
         <div className="hero-text">
-          <h1 className="hero-statement">Garden Center and Farm Market</h1>
           <p className="hero-copy">
             Opened in 1970, we are a family owned and operated garden center and
             farm market. We have over 15 greenhouse filled with trees, shrubs,
@@ -65,23 +65,27 @@ function App() {
         </div>
       </section>
       <footer>
-        <a
-          className="header-link"
-          target="_blank"
-          rel="noopener noreferrer"
-          href={`https://maps.google.com/?q=${encodedAddress}`}
-        >
-          <p className="header-link-text">
+        <p>
+          Questions? Call:{" "}
+          <a
+            className="header-link"
+            href="tel:5182834267"
+            rel="noopener norefferer"
+          >
+            (518)-283-4267
+          </a>
+        </p>
+
+        <p className="header-link-text">
+          <a
+            className="header-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            href={`https://maps.google.com/?q=${encodedAddress}`}
+          >
             381 North Greenbush Road, Troy NY 12180
-          </p>
-        </a>
-        <a
-          className="header-link"
-          href="tel:5182834267"
-          rel="noopener norefferer"
-        >
-          <p className="header-link-text">(518)-283-4267</p>
-        </a>
+          </a>
+        </p>
       </footer>
     </div>
   );
