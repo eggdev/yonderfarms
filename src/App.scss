@@ -1,17 +1,33 @@
+.mobbreak {
+  display: none;
+  @media only screen and (max-width: 600px) {
+    display: block;
+  }
+}
+
 .main {
+  margin: 0 auto;
+  max-width: 650px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  overflow: hidden;
   .header {
-    max-width: 100%;
+    width: 100%;
     text-align: center;
+    padding: 1rem;
     img {
       width: 100%;
+      @media only screen and (min-width: 768px) {
+        width: 75%;
+      }
+      border-bottom: 1px solid #0a0a0a;
     }
     .header-link {
       text-decoration: none;
       color: #0a0a0a;
-      h3 {
+      .header-link-text {
         margin: 0.5rem 0;
       }
       &:hover {
@@ -19,6 +35,27 @@
       }
       &:visited {
         color: inherit;
+      }
+    }
+    .farm-hours {
+      text-align: center;
+    }
+  }
+  .content {
+    width: 100%;
+    text-align: center;
+    .hero-image {
+      width: 100%;
+    }
+    background-color: #ffffff;
+    .hero-text {
+      width: 100%;
+      .hero-statement {
+        font-size: 2rem;
+      }
+      .hero-copy {
+        max-width: 100%;
+        text-align: justify;
       }
     }
   }
