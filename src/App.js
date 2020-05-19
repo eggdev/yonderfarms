@@ -1,24 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.scss";
 
 function App() {
+  const encodedAddress = encodeURIComponent(
+    "381 North Greenbush Road, Troy NY 12180"
+  );
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+    <div className="main">
+      <header className="header">
+        <img src="yonder_logo.jpg" alt="Yonder Farms Logo" />
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          className="header-link"
           target="_blank"
           rel="noopener noreferrer"
+          href={`https://maps.google.com/?q=${encodedAddress}`}
         >
-          Learn React
+          <h3>381 North Greenbush Road, Troy NY 12180</h3>
+        </a>
+        <a
+          className="header-link"
+          href="tel:5182834267"
+          rel="noopener norefferer"
+        >
+          <h3>(518)-283-4267</h3>
         </a>
       </header>
+      <main></main>
+      <footer></footer>
     </div>
   );
 }

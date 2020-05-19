@@ -1,0 +1,25 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .header {
+    max-width: 100%;
+    text-align: center;
+    img {
+      width: 100%;
+    }
+    .header-link {
+      text-decoration: none;
+      color: #0a0a0a;
+      h3 {
+        margin: 0.5rem 0;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+      &:visited {
+        color: inherit;
+      }
+    }
+  }
+}
