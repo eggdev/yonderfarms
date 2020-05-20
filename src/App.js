@@ -19,7 +19,7 @@ function App() {
           href={`https://maps.google.com/?q=${encodedAddress}`}
         >
           <h2 className="header-link-text">
-            381 North Greenbush Road, Troy NY 12180
+            381 North Greenbush Road Troy, NY 12180
           </h2>
         </a>
         <a
@@ -27,12 +27,12 @@ function App() {
           href="tel:5182834267"
           rel="noopener norefferer"
         >
-          <h2 className="header-link-text">(518)-283-4267</h2>
+          <h2 className="header-link-text">(518) 283-4267</h2>
         </a>
         <div className="farm-hours">
           <h3>
-            Open May thru November,
-            <br className="mobbreak" /> 7 days a week: 9:00am - 5:00pm
+            Open May thru November
+            <br className="mobbreak" /> 7 days a week: 8:00am - 5:00pm
           </h3>
         </div>
       </header>
@@ -72,7 +72,7 @@ function App() {
             href="tel:5182834267"
             rel="noopener norefferer"
           >
-            (518)-283-4267
+            (518) 283-4267
           </a>
         </p>
 
@@ -83,7 +83,7 @@ function App() {
             rel="noopener noreferrer"
             href={`https://maps.google.com/?q=${encodedAddress}`}
           >
-            381 North Greenbush Road, Troy NY 12180
+            381 North Greenbush Road Troy, NY 12180
           </a>
         </p>
       </footer>
